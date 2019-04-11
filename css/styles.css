@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #73E0f1;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  /* margin: 0 auto; */
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2A19DC;
+}
+
+/* Layout Containers*/
+.container {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigate */
+.name {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  background-color: #73E0f1;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+nav ul {
+  background-color: #73E0f1;
+  text-align: center;
+}
+
+nav li a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bio img {
+  display: block;
+  margin: 0 auto;
+}
+.main-nav li {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+  display: block;
+  margin: .5em 1em;
+  padding-bottom: 20px;
+  background-color: #73E0f1;
+}
+
+.main-nav a:hover {
+  color: #2A19DC;
+}
+
+.introduction {
+  padding-bottom: 20px;
+}
+
+.responsive-photo {
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.portfolio-photo {
+  border-radius: 15px;
+  align-items: center;
+}
+
+.header-content {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: black;
+  text-align: center;
+
+}
+
+h3 {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+  padding: 1em 0;
+}
+
+h2#contact {
+    line-height: 0;
+}
+
+.main-footer {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightslategrey;
+  margin-top: 50px;
+}
+
+.main-footer .top {
+  flex: 1;
+  align-self: center;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.skills {
+  background: white;
+  padding: 5px 0 25px;
+}
+
+h2.skills {
+  margin-top: 0;
+}
+
+.skill-list {
+  text-align: center;
+}
+
+.skill-list li {
+  display: inline-block;
+}
+/* hides footer navigation on small screens */
+.footer-nav {
+  display: none;
+}
+
+/* media query - Large screen*/
+@media screen and (min-width: 768px) {
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .bio {
+    display: flex;
+  }
+
+  .bio p {
+    order: 1;
+    padding-right: 15px;
+  }
+
+  .bio img {
+    order: 2;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .portfolio article {
+    display: block;
+    max-width: 48.5%;
+    margin-bottom: 25px;
+  }
+
+  .contact {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .main-footer .top {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline-block;
+    flex: 1;
+    align-self: center;
+    text-align: right;
+    text-decoration: none;
+    margin:auto;
+  }
+
+  .footer-nav li {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    background-color: #73E0f1;
+    margin-right: 25px;
+  }
+
+  .footer-nav li:last-of-type {
+    margin-right: 0;
+  }
+
+  .footer-nav a:hover {
+    color: #2A19DC;
+  }
+
+}
+/* media query 1024px (website)*/
+
+@media (min-width: 1024px){
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .main-header .name {
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .bio p {
+    padding-right: 25px;
+  }
+
+  .portfolio article {
+    display: block;
+    max-width: 32%;
+  }
+
+  .footer-nav li {
+    margin-right: 30px;
+  }
+
+  .footer-nav li:last-of-type {
+    margin-right: 0;
+  }
+
+}
